@@ -1,0 +1,34 @@
+POST http://localhost:4001/products
+Content-Type: application/json
+
+{
+    "name": "Planner",
+    "price": "4.30"
+}
+
+###
+POST http://localhost:4001/products
+Content-Type: application/json
+
+{
+    "name": "Pen",
+    "price": "0.50"
+}
+
+###
+GET http://localhost:4001/products
+
+###
+GET http://localhost:4001/products/7f0eebfd-de4d-42d6-be34-5621eb45cc79
+
+###
+PUT http://localhost:4001/products/7f0eebfd-de4d-42d6-be34-5621eb45cc79
+Content-Type: application/json
+
+{
+    "name": "Pen",
+    "price": "0.60"
+}
+
+###
+DELETE http://localhost:4001/products/b2ff91b2-fe86-4b97-8793-f57eeb294c7c
